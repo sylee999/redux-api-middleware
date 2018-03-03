@@ -160,7 +160,7 @@ function apiMiddleware({ getState }) {
         return next(
           await actionWith(
             {
-              ...requestType,
+              ...failureType,
               payload: new RequestError(e.message),
               error: true
             },
